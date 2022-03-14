@@ -6,7 +6,6 @@ function Vegetable(props) {
     const [name] = useState(props.name)
     const [qnt, setQnt] = useState(+props.qnt)
     function changeQnt(x) {
-        console.log(typeof qnt);
         setQnt(qnt+ x)
     }
     return(

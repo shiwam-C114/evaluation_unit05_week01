@@ -6,22 +6,12 @@ function Wishlist() {
 
     let [items, setItems] = useState([])
     let [item, setitem] = useState("")
-
-    // function addItem() {
-    //     if
-    // }
-
     let flag = false
     function visbilty() {
         let txtInp = document.getElementById("item")
         let btn = document.getElementById("btn")
         let msg = document.getElementById("msg")
-        if (flag) {
-            txtInp.style.visibility = "visible"
-            btn.style.visibility = "visible"
-            msg.style.visibility = "hidden"
-            flag = false
-        }else {
+        if (!flag) {
             txtInp.style.visibility = "hidden"
             btn.style.visibility = "hidden"
             msg.style.visibility = "visible"
@@ -29,10 +19,8 @@ function Wishlist() {
         }
     }
     function display() {
-        // console.log(items.length);
         if (items.length >= 2) {
-            visbilty()
-            
+            visbilty() 
         }
         setItems(items.concat(item))
     }
