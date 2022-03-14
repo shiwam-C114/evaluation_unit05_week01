@@ -6,8 +6,10 @@ import { Wishlist } from './wishlist';
 function App() {
   return (
     <div>
-      <Vegetables/>
       <Wishlist/>
+      <br />
+      <hr />
+      <Vegetables/>
     </div>
   )
     
